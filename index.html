@@ -1,202 +1,371 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Candidature MMI" />
+    <meta name="title" property="og:title" content="Aurélien Louvel" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://live.staticflickr.com/65535/51198749783_9d0b2cbf12_c.jpg"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="Candidature MMI"
+    />
+    <meta name="author" content="Aurélien LOUVEL" />
     <title>Aurélien Louvel</title>
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="style.css" />
-    <script type='text/javascript' src='jquery.particleground.js'></script>
-    <script type='text/javascript' src='particleground.js'></script>
-    <script type='text/javascript' src='anime.min.js'></script>
+    <script type="text/javascript" src="jquery.particleground.js"></script>
+    <script type="text/javascript" src="particleground.js"></script>
+    <script type="text/javascript" src="anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-</head>
+  </head>
 
-<body>
-    
-<div id="particles"></div>
+  <body>
+    <div id="particles"></div>
     <div id="intro">
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#realisations">Réalisations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-    <div class="sec" id="accueil">
-    <div class="monnom"><svg preserveAspectRatio="xMidYMid meet"><path stroke="#fff" stroke-width="6" fill="none" id="svg" d="M0.485,378.327h88.58l30.385-75H261.075l31.415,75h90.64l-158.62-354H158.075Zm233.295-141H144.685l44.29-110Zm417.148-102h-77.25v121c0,31.5-6.18,62-46.35,62-39.655,0-40.169-36-40.169-64v-119h-77.25v134c0,65,14.42,115,92.7,115,37.595,0,62.83-20,73.13-39h1.03v33h74.16v-243Zm54.585,243h77.25v-101.5c0-48.5,7.21-81.5,65.92-81.5,11.33,0,22.145,2,32.96,5v-68.5c-7.21-2-17-2.5-25.75-2.5-33.99,0-55.62,15.5-72.1,45h-1.03v-39h-77.25v243Zm383.167-80.5c-12.88,17-29.87,29.5-55.11,29.5-29.87,0-52.013-18.5-58.193-47H1154.6v-23.5c0-77.5-45.32-127.5-117.42-127.5-77.253,0-139.053,50-139.053,127.5s61.8,127.5,139.053,127.5c40.17,0,80.85-17.5,105.57-48Zm-113.3-68.5c2.06-23.5,20.6-46,54.593-46,27.81,0,47.89,21,47.38,46H975.377Zm-0.515-133h67.978l89.1-72H1026.88Zm227.628,282h77.25v-378h-77.25v378Zm133.89,0h77.25v-243h-77.25v243Zm-6.18-319.5c0,24,20.09,43.5,44.81,43.5s44.8-19.5,44.8-43.5-20.08-43.5-44.8-43.5S1330.2,34.827,1330.2,58.827Zm321.88,239c-12.88,17-29.87,29.5-55.11,29.5-29.87,0-52.01-18.5-58.19-47H1718v-23.5c0-77.5-45.32-127.5-117.42-127.5-77.25,0-139.05,50-139.05,127.5s61.8,127.5,139.05,127.5c40.17,0,80.85-17.5,105.57-48Zm-113.3-68.5c2.06-23.5,20.6-46,54.59-46,27.81,0,47.89,21,47.38,46H1538.78Zm226.08,149h77.25v-121c0-31.5,6.18-62,46.35-62,39.65,0,40.17,36,40.17,64v119h77.25v-134c0-65-14.42-115-92.7-115-37.6,0-62.83,20-73.13,39h-1.03v-33h-74.16v243Zm460.91,0h229.18v-72H2306.11v-282h-80.34v354Zm254.4-121.5c0,77.5,61.8,127.5,139.05,127.5s139.05-50,139.05-127.5-61.8-127.5-139.05-127.5S2480.17,179.327,2480.17,256.827Zm77.25,0c0-36.5,23.18-61.5,61.8-61.5s61.8,25,61.8,61.5-23.17,61.5-61.8,61.5S2557.42,293.327,2557.42,256.827Zm487.19-121.5h-77.25v121c0,31.5-6.18,62-46.35,62-39.66,0-40.17-36-40.17-64v-119h-77.25v134c0,65,14.42,115,92.7,115,37.59,0,62.83-20,73.13-39h1.03v33h74.16v-243Zm131.83,243h81.89l98.88-243h-77.77l-58.71,165h-1.03l-63.34-165h-83.43Zm391.92-80.5c-12.88,17-29.87,29.5-55.11,29.5-29.87,0-52.01-18.5-58.19-47h179.22v-23.5c0-77.5-45.32-127.5-117.42-127.5-77.25,0-139.05,50-139.05,127.5s61.8,127.5,139.05,127.5c40.17,0,80.85-17.5,105.57-48Zm-113.3-68.5c2.06-23.5,20.6-46,54.59-46,27.81,0,47.89,21,47.38,46H3455.06Zm227.11,149h77.25v-378h-77.25v378Z"/></svg></div>
-    
-    <p class="sous-titre" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600">Partir en MMI, c'est avant tout ...</p>
-    <a href="#presentation"><div class="scroll-downs"><div class="mousey"><div class="scroller"></div></div></div></a>
-    </div>   
-        
-     
-    <div class="sec" id="presentation">
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="sec" id="accueil">
+        <div class="monnom">
+          <svg preserveAspectRatio="xMidYMid meet">
+            <path
+              stroke="#fff"
+              stroke-width="6"
+              fill="none"
+              id="svg"
+              d="M0.485,378.327h88.58l30.385-75H261.075l31.415,75h90.64l-158.62-354H158.075Zm233.295-141H144.685l44.29-110Zm417.148-102h-77.25v121c0,31.5-6.18,62-46.35,62-39.655,0-40.169-36-40.169-64v-119h-77.25v134c0,65,14.42,115,92.7,115,37.595,0,62.83-20,73.13-39h1.03v33h74.16v-243Zm54.585,243h77.25v-101.5c0-48.5,7.21-81.5,65.92-81.5,11.33,0,22.145,2,32.96,5v-68.5c-7.21-2-17-2.5-25.75-2.5-33.99,0-55.62,15.5-72.1,45h-1.03v-39h-77.25v243Zm383.167-80.5c-12.88,17-29.87,29.5-55.11,29.5-29.87,0-52.013-18.5-58.193-47H1154.6v-23.5c0-77.5-45.32-127.5-117.42-127.5-77.253,0-139.053,50-139.053,127.5s61.8,127.5,139.053,127.5c40.17,0,80.85-17.5,105.57-48Zm-113.3-68.5c2.06-23.5,20.6-46,54.593-46,27.81,0,47.89,21,47.38,46H975.377Zm-0.515-133h67.978l89.1-72H1026.88Zm227.628,282h77.25v-378h-77.25v378Zm133.89,0h77.25v-243h-77.25v243Zm-6.18-319.5c0,24,20.09,43.5,44.81,43.5s44.8-19.5,44.8-43.5-20.08-43.5-44.8-43.5S1330.2,34.827,1330.2,58.827Zm321.88,239c-12.88,17-29.87,29.5-55.11,29.5-29.87,0-52.01-18.5-58.19-47H1718v-23.5c0-77.5-45.32-127.5-117.42-127.5-77.25,0-139.05,50-139.05,127.5s61.8,127.5,139.05,127.5c40.17,0,80.85-17.5,105.57-48Zm-113.3-68.5c2.06-23.5,20.6-46,54.59-46,27.81,0,47.89,21,47.38,46H1538.78Zm226.08,149h77.25v-121c0-31.5,6.18-62,46.35-62,39.65,0,40.17,36,40.17,64v119h77.25v-134c0-65-14.42-115-92.7-115-37.6,0-62.83,20-73.13,39h-1.03v-33h-74.16v243Zm460.91,0h229.18v-72H2306.11v-282h-80.34v354Zm254.4-121.5c0,77.5,61.8,127.5,139.05,127.5s139.05-50,139.05-127.5-61.8-127.5-139.05-127.5S2480.17,179.327,2480.17,256.827Zm77.25,0c0-36.5,23.18-61.5,61.8-61.5s61.8,25,61.8,61.5-23.17,61.5-61.8,61.5S2557.42,293.327,2557.42,256.827Zm487.19-121.5h-77.25v121c0,31.5-6.18,62-46.35,62-39.66,0-40.17-36-40.17-64v-119h-77.25v134c0,65,14.42,115,92.7,115,37.59,0,62.83-20,73.13-39h1.03v33h74.16v-243Zm131.83,243h81.89l98.88-243h-77.77l-58.71,165h-1.03l-63.34-165h-83.43Zm391.92-80.5c-12.88,17-29.87,29.5-55.11,29.5-29.87,0-52.01-18.5-58.19-47h179.22v-23.5c0-77.5-45.32-127.5-117.42-127.5-77.25,0-139.05,50-139.05,127.5s61.8,127.5,139.05,127.5c40.17,0,80.85-17.5,105.57-48Zm-113.3-68.5c2.06-23.5,20.6-46,54.59-46,27.81,0,47.89,21,47.38,46H3455.06Zm227.11,149h77.25v-378h-77.25v378Z"
+            />
+          </svg>
+        </div>
+
+        <p
+          class="sous-titre"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-delay="600"
+        >
+          Partir en MMI, c'est avant tout ...
+        </p>
+        <a href="#presentation">
+          <div class="scroll-downs">
+            <div class="mousey"><div class="scroller"></div></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="sec" id="presentation">
         <p class="titre3" data-text="Une histoire ...">Une histoire ...</p>
         <section class="caract">
-            <div id="gauche" class="carte-corps">
-                <p class="carte-titre">DE SUITE</p>
-                <p class="contenu">Actuellement en <span style="font-family:'font-heavy'; color: #101923">Terminale scientifique</span>, j'étudie les <span style="font-family:'font-heavy'; color: #101923">Sciences de l'ingénieur</span> et exerce la spécialité <span style="font-family:'font-heavy'; color: #101923">ISN</span> (informatique et sciences du numérique) depuis la Seconde </p>
-            </div>
-            <div id="milieu" class="carte-corps">
-                <p class="carte-titre">DE PROJET</p>
-                <p class="contenu">J'ai pour projet tout d'abord d'obtenir mon <span style="font-family:'font-heavy'; color: #101923">BAC</span> pour parvenir à un <span style="font-family:'font-heavy'; color: #101923">DUT MMI</span> qui me permettra d'intégrer l'école d'ingénieur <span style="font-family:'font-heavy'; color: #101923">IMAC</span>, et par la suite devenir <span style="font-family:'font-heavy'; color: #101923">UX Designer</span></p>                    
-            </div>
-            <div id="droite" class="carte-corps">
-                <p class="carte-titre">D'ENVIE</p>
-                <p class="contenu">Depuis mon enfance, j'ai toujours eu <span style="font-family:'font-heavy'; color: #101923">l'envie</span> de <span style="font-family:'font-heavy'; color: #101923">créer</span>. Attiré par la <span style="font-family:'font-heavy'; color: #101923">technologie</span>, j'ai alors réalisé des <span style="font-family:'font-heavy'; color: #101923">créations graphiques</span>. La <span style="font-family:'font-heavy'; color: #101923">photographie</span> et la <span style="font-family:'font-heavy'; color: #101923">vidéo</span> me passionnent aussi. De plus, l'exercice régulier du <span style="font-family:'font-heavy'; color: #101923">volley</span> me permet de développer mon <span style="font-family:'font-heavy'; color: #101923">esprit d'équipe</span></p>
-            </div>
-        <a href="#realisations" class="arrow" ><img id="arrow" src="images/arrow.png"></a>
+          <div id="gauche" class="carte-corps">
+            <p class="carte-titre">DE SUITE</p>
+            <p class="contenu">
+              Actuellement en
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                Terminale scientifique
+              </span>
+              , j'étudie les
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                Sciences de l'ingénieur
+              </span>
+              et exerce la spécialité
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                ISN
+              </span>
+              (informatique et sciences du numérique) depuis la Seconde
+            </p>
+          </div>
+          <div id="milieu" class="carte-corps">
+            <p class="carte-titre">DE PROJET</p>
+            <p class="contenu">
+              J'ai pour projet tout d'abord d'obtenir mon
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                BAC
+              </span>
+              pour parvenir à un
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                DUT MMI
+              </span>
+              qui me permettra d'intégrer l'école d'ingénieur
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                IMAC
+              </span>
+              , et par la suite devenir
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                UX Designer
+              </span>
+            </p>
+          </div>
+          <div id="droite" class="carte-corps">
+            <p class="carte-titre">D'ENVIE</p>
+            <p class="contenu">
+              Depuis mon enfance, j'ai toujours eu
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                l'envie
+              </span>
+              de
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                créer
+              </span>
+              . Attiré par la
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                technologie
+              </span>
+              , j'ai alors réalisé des
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                créations graphiques
+              </span>
+              . La
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                photographie
+              </span>
+              et la
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                vidéo
+              </span>
+              me passionnent aussi. De plus, l'exercice régulier du
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                volley
+              </span>
+              me permet de développer mon
+              <span style="font-family: 'font-heavy'; color: #101923;">
+                esprit d'équipe
+              </span>
+            </p>
+          </div>
+          <a href="#realisations" class="arrow">
+            <img id="arrow" src="images/arrow.png" />
+          </a>
         </section>
-    </div> 
+      </div>
 
-        
-    <div class="sec" id="realisations">
-        <p class="titre2" data-text="Une suite à mes réalisations ...">Une suite à mes réalisations ...</p>
+      <div class="sec" id="realisations">
+        <p class="titre2" data-text="Une suite à mes réalisations ...">
+          Une suite à mes réalisations ...
+        </p>
         <section class="caract">
-            <div id="gauche" class="carte-corps">
-                <p class="carte-titre">JEUX/SITES/APPS</p>
-                <div class="contenu" id="liens">
-                    <p><a onclick="window.open('realisations.html#crash','_self')">Crash</a></p>
-                    <p><a onclick="window.open('realisations.html#monarque','_self')">Monarque</a></p>
-                    <p><a onclick="window.open('realisations.html#aumonerie','_self')">Association</a></p>
-                    <p><a onclick="window.open('realisations.html#aro','_self')">Aro</a></p>
-                </div>
+          <div id="gauche" class="carte-corps">
+            <p class="carte-titre">JEUX/SITES/APPS</p>
+            <div class="contenu" id="liens">
+              <p>
+                <a onclick="window.open('realisations.html#crash','_self')">
+                  Crash
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#monarque','_self')">
+                  Monarque
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#aumonerie','_self')">
+                  Association
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#aro','_self')">
+                  Aro
+                </a>
+              </p>
             </div>
-            <div id="milieu" class="carte-corps">
-                <p class="carte-titre">VIDÉOS/PHOTOS</p>
-                <div class="contenu" id="liens">
-                    <p><a onclick="window.open('realisations.html#motiondesign','_self')">Motion design</a></p>
-                    <p><a onclick="window.open('realisations.html#chine','_self')">Chine 2018</a></p>
-                    <p><a onclick="window.open('realisations.html#espagne','_self')">Espagne 2018</a></p>
-                    <p><a onclick="window.open('realisations.html#futurap','_self')">Futurap</a></p>
-                    <p><a onclick="window.open('realisations.html#instagram','_self')">Instagram</a></p>
-                </div>
+          </div>
+          <div id="milieu" class="carte-corps">
+            <p class="carte-titre">VIDÉOS/PHOTOS</p>
+            <div class="contenu" id="liens">
+              <p>
+                <a
+                  onclick="window.open('realisations.html#motiondesign','_self')"
+                >
+                  Motion design
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#chine','_self')">
+                  Chine 2018
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#espagne','_self')">
+                  Espagne 2018
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#futurap','_self')">
+                  Futurap
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#instagram','_self')">
+                  Instagram
+                </a>
+              </p>
             </div>
-            <div id="droite" class="carte-corps">
-                <p class="carte-titre">DESIGN/AUTRES</p>
-                <div class="contenu" id="liens">
-                    <p><a onclick="window.open('realisations.html#elite','_self')">Elite Politik's</a></p>
-                    <p><a onclick="window.open('realisations.html#stage','_self')">Stage de Seconde</a></p>
-                    <p><a onclick="window.open('realisations.html#rainmeter','_self')">Rainmeter</a></p>
-                    <p><a onclick="window.open('realisations.html#filtres','_self')">Filtres Insta</a></p>
-                </div>
+          </div>
+          <div id="droite" class="carte-corps">
+            <p class="carte-titre">DESIGN/AUTRES</p>
+            <div class="contenu" id="liens">
+              <p>
+                <a onclick="window.open('realisations.html#elite','_self')">
+                  Elite Politik's
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#stage','_self')">
+                  Stage de Seconde
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#rainmeter','_self')">
+                  Rainmeter
+                </a>
+              </p>
+              <p>
+                <a onclick="window.open('realisations.html#filtres','_self')">
+                  Filtres Insta
+                </a>
+              </p>
             </div>
-        <a href="#contact" class="arrow"><img id="arrow" src="images/arrow.png"></a>
+          </div>
+          <a href="#contact" class="arrow">
+            <img id="arrow" src="images/arrow.png" />
+          </a>
         </section>
-    </div> 
+      </div>
 
-    
-    <div class="sec" id="contact">
+      <div class="sec" id="contact">
         <p class="titre3" data-text="Me découvrir ...">Me découvrir ...</p>
-        <p class="tel"><a href="tel:0769716000"><img class="pic" src="images/telephone.png"></a></p>
-        <p class="mail"><a href="mailto:aurjeu14@gmail.com"><img class="pic" src="images/gmail.png"></a></p>
-        <p class="insta"><a href="https://www.instagram.com/aurelien.louvel"target="_blank"><img class="pic" src="images/instagram.png"></a></p>
-    </div> 
-        
-  </div>
+        <p class="tel">
+          <a href="tel:0769716000">
+            <img class="pic" src="images/telephone.png" />
+          </a>
+        </p>
+        <p class="mail">
+          <a href="mailto:aurjeu14@gmail.com">
+            <img class="pic" src="images/gmail.png" />
+          </a>
+        </p>
+        <p class="insta">
+          <a href="https://www.instagram.com/aurelien.louvel" target="_blank">
+            <img class="pic" src="images/instagram.png" />
+          </a>
+        </p>
+      </div>
+    </div>
 
-
-<script src="jquery-1.9.1.js"></script>
-<script>
-    anime({
+    <script src="jquery-1.9.1.js"></script>
+    <script>
+      anime({
         targets: '#svg',
-        strokeDashoffset:[anime.setDashoffset, 0],
+        strokeDashoffset: [anime.setDashoffset, 0],
         easing: 'linear',
         duration: 50000,
         direction: 'alternate',
         loop: true,
-    });
-    </script>    
-<script>
-ScrollReveal().reveal('.arrow',{
-    origin: 'bottom',
-    distance:'40%',
-    duration: 2000,
-    delay: 3000,
-        });
-ScrollReveal().reveal('.sous-titre',{
-    origin: 'right',
-    distance:'10%',
-    duration: 2000,
-    delay: 1000,
-        });
-ScrollReveal().reveal('.mousey',{
-    origin: 'bottom',
-    distance:'40%',
-    duration: 2000,
-    delay: 3000,
-        });    
-    
-ScrollReveal().reveal('.titre3',{
-    origin: 'top',
-    distance:'40%',
-    duration: 2000,
-    reset:false,
-        }); 
-ScrollReveal().reveal('.titre2',{
-    origin: 'top',
-    distance:'40%',
-    duration: 2000,
-    reset:false,
-        }); 
-ScrollReveal().reveal('#gauche',{
-    origin: 'left',
-    distance:'20%',
-    duration: 1500,
-    reset:false,
-    delay: 1000,
-        });
-ScrollReveal().reveal('#milieu',{
-    origin: 'left',
-    distance:'20%',
-    duration: 1500,
-    reset:false,
-    delay: 1750,
-        }); 
-ScrollReveal().reveal('#droite',{
-    origin: 'left',
-    distance:'20%',
-    duration:1500,
-    reset:false,
-    delay: 2500,
-        }); 
-</script>
-   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+      })
+    </script>
+    <script>
+      ScrollReveal().reveal('.arrow', {
+        origin: 'bottom',
+        distance: '40%',
+        duration: 2000,
+        delay: 3000,
+      })
+      ScrollReveal().reveal('.sous-titre', {
+        origin: 'right',
+        distance: '10%',
+        duration: 2000,
+        delay: 1000,
+      })
+      ScrollReveal().reveal('.mousey', {
+        origin: 'bottom',
+        distance: '40%',
+        duration: 2000,
+        delay: 3000,
+      })
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+      ScrollReveal().reveal('.titre3', {
+        origin: 'top',
+        distance: '40%',
+        duration: 2000,
+        reset: false,
+      })
+      ScrollReveal().reveal('.titre2', {
+        origin: 'top',
+        distance: '40%',
+        duration: 2000,
+        reset: false,
+      })
+      ScrollReveal().reveal('#gauche', {
+        origin: 'left',
+        distance: '20%',
+        duration: 1500,
+        reset: false,
+        delay: 1000,
+      })
+      ScrollReveal().reveal('#milieu', {
+        origin: 'left',
+        distance: '20%',
+        duration: 1500,
+        reset: false,
+        delay: 1750,
+      })
+      ScrollReveal().reveal('#droite', {
+        origin: 'left',
+        distance: '20%',
+        duration: 1500,
+        reset: false,
+        delay: 2500,
+      })
+    </script>
 
-      // Store hash
-      var hash = this.hash;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $('a').on('click', function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== '') {
+            // Prevent default anchor click behavior
+            event.preventDefault()
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      },1000, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-<script>
-    $(document).ready(function(){ 
-    $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').remove();
-   }); 
-</script>  
-    
-    
-</body>
+            // Store hash
+            var hash = this.hash
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              1000,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash
+              },
+            )
+          } // End if
+        })
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('body')
+          .find(
+            'img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]',
+          )
+          .remove()
+      })
+    </script>
+  </body>
 </html>
