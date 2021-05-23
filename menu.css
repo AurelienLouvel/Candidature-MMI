@@ -1,0 +1,39 @@
+nav {
+    display: inline-block;
+    z-index: 3;
+    top: 2%;
+    float: right;
+    right: 2%;
+    width: 100%;
+    position: fixed;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    text-align: right;
+}
+
+nav:hover{
+    opacity: 1;
+}
+
+
+nav ul{
+    display: inline;
+    margin: 0 auto;
+    list-style: none;
+    }
+
+nav li {
+    display: inline-block;
+    padding: 1.5%;
+}
+
+nav a{
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'font-light';
+    letter-spacing: 0.01em;
+    
+}
